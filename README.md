@@ -55,68 +55,101 @@
 
 </div>
 
-This should be a **short** explination as to: why the project exists, what the project will do, why that is good.
+Board with your recipe book? Want to step out of your comfort zone and taste something new? This is for you.
 
-Here's a ul:
+***Lunch and Learn*** is an app that will let you find your new favorite recipe by country of origin. After you are done cooking ***Lunch and Learn*** will look up some edutainment to watch while you enjoy your new dish.
 
-* Something about the project
-* Another thing about the project
-* :smile:
-
-Closing sentence about why the project is so cool!
+Sign up and get started!
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Usage
+### Web Usage
 
-This is an example of how to list things you need to use the web application.
+This is a Ruby on Rails web application that was made for the chrome browser and for use with Google OAuth. You will need the following:
 
-* chrome
+* Google Chrome
+* Google account
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To get started, follow the link below and register with your Google account. Once you are registered you will be able to:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+* Search for recipes by country
+* Have ***Lunch and Learn*** select a country for you
+* Play an educational video on that select county.
 
-### Installation
+### Local Installation
 
-This is an example of how to list things you need to use the software localy.
+This application was made with the following:
 
 * ruby '2.7.4'
 * rails '5.2.8'
 
-_Below is an example of how you can instruct your audience on installing and setting up your app locally. This template doesn't rely on any external dependencies or services._
+To install and run on your personal computer you will need to do the following:
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Fork and clone the repo to your local machine
 3. Install gems
 
    ```sh
-   bundle install
-   rails db:{drop,create,migrate,seed}
-   bundle exec figaro install
+   $ bundle install
+   $ rails db:{drop,create,migrate,seed}
+   $ bundle exec figaro install
    ```
 
-4. Enter your API in `config/application.yml`
+4. Enter your API in the `config/application.yml` file
 
    ```yml
    api-key-name: <YOUR API KEY HERE>
    ```
+
+5. Start your rails server in the root directory
+
+    ```sh
+    $ rails s
+    ```
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-* [x] Complete MVP
-* [x] Add Cool-new-feature
-* [ ] Next big thing
-  * [ ] part one
-  * [ ] part two
+* [ ] Complete MVP
+* [ ] Deploy to Heroku
+* [ ] Add 400 level status codes and prams check
+* [ ] Add DELETE for favorite(s) (DELETE '/api/v1/favorites)
+* [ ] Utilize Cashing OR Background Workers
+* [ ] Implement Google OAuth
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
+### Learning Goals
+* Expose an API that aggregates data from multiple external APIs
+* Expose an API that requires and authentication token
+* Expose an API for CRUD functionality
+* Determine completion criteria based on the needs of other developers
+* Test both API consumption and exposure, making use of at least one mocking tool (VCR, Webmock)
+
+### Evaluation Rubric
+1. Technical Presentation
+    * Demo understanding of learning goals
+    * Demo functionality with Postman and live demo
+    * Discuss technical quality & organization of code
+    * Discuss test coverage, happy path, sad path, and edge cases
+
+2. Feature Delivery
+    * Complete all MVP features as directed [here](https://backend.turing.edu/module3/projects/lunch_and_learn/requirements)
+    * Complete 3 of 4
+
+3. Technical Quality
+    * Demonstrate good use of abstraction and encapsulation in Facades and Services
+    * Demonstrate good use of Model, View, Controller (MVC) design principles
+
+4.  Testing
+    * Minimum of 90% testing coverage
+    * Include all 'happy path' and 'sad path' testing
+    * Include use of VCR and/or Webmock
+    * Testing checks for presence of data in payload and data type
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
@@ -158,16 +191,17 @@ Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Do you have a better & cooler way of doing what I did? Your contribution would be **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Please fork the repo, create your branch, and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+Thanks again!
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
