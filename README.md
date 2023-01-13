@@ -20,7 +20,7 @@
   [![Issues][issues-shield]][issues-url]
 
   <a href="https://github.com/josephhilby/lunch_and_learn">
-    <img src="images/banner-example.png" alt="Logo" width="100%">
+    <img src="lib/images/banner.png" alt="Logo" width="100%">
   </a>
 
   <h3 align="center">
@@ -126,7 +126,7 @@ See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-<img src="images/tech-stack-demo.png" alt="Tech-Stack">
+<img src="lib/images/tech-stack.png" alt="Tech-Stack">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -218,4 +218,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [forks-url]: https://github.com/othneildrew/josephhilby/lunch_and_learn/network/members
 [issues-shield]: https://img.shields.io/github/issues/josephhilby/lunch_and_learn.svg?style=for-the-badge
 [issues-url]: https://github.com/josephhilby/lunch_and_learn/issues
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: lib/images/screenshot.png
