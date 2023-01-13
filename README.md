@@ -128,7 +128,7 @@ Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
 
 <br />
 <div align="center">
-  <img src="lib/images/tech-stack.png" alt="Tech-Stack" width="50%">
+  <img src="lib/images/tech-stack.png" alt="Tech-Stack" width="70%">
 </div >
 
 <p align="right">(<a href="#top">back to top</a>)</p>
