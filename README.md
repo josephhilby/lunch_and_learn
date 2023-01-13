@@ -65,7 +65,7 @@ Here's a ul:
 
 Closing sentence about why the project is so cool!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -105,7 +105,7 @@ _Below is an example of how you can instruct your audience on installing and set
    api-key-name: <YOUR API KEY HERE>
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -118,7 +118,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- BUILT WITH -->
 ## Built With
@@ -131,7 +131,7 @@ Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
   <img src="lib/images/tech-stack.png" alt="Tech-Stack" width="70%">
 </div >
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
@@ -153,7 +153,7 @@ Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
   </table>
 </div>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -169,21 +169,21 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
 Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
