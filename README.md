@@ -20,11 +20,10 @@
   [![Issues][issues-shield]][issues-url]
 
   <a href="https://github.com/josephhilby/lunch_and_learn">
-    <img src="images/banner-example.png" alt="Logo" width="100%">
+    <img src="lib/images/banner.png" alt="Logo" width="100%">
   </a>
 
   <h3 align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/josephhilby/lunch_and_learn/issues">Report Bug</a>
     ·
@@ -66,7 +65,7 @@ Here's a ul:
 
 Closing sentence about why the project is so cool!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -106,7 +105,7 @@ _Below is an example of how you can instruct your audience on installing and set
    api-key-name: <YOUR API KEY HERE>
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -119,55 +118,42 @@ _Below is an example of how you can instruct your audience on installing and set
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- BUILT WITH -->
 ## Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
 
-<img src="images/tech-stack-demo.png" alt="Tech-Stack">
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<br />
+<div align="center">
+  <img src="lib/images/tech-stack.png" alt="Tech-Stack" width="70%">
+</div >
+
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
 
-### Front End Team
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/108031077?s=120&v=4"></td>
+    </tr>
+    <tr>
+      <td>Joseph Hilby</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/josephhilby">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/josephmhilby/">LinkedIn</a>
+      </td>
+    </tr>
+  </table>
+</div>
 
-<table>
-  <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/######?s=120&v=4"></td>
-  </tr>
-  <tr>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/<username>">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/<username>/">LinkedIn</a>
-    </td>
-  </tr>
-</table>
-
-### Back End Team
-
-<table>
-  <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/108031077?s=120&v=4"></td>
-  </tr>
-  <tr>
-    <td>Joseph Hilby</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/josephhilby">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/josephmhilby/">LinkedIn</a>
-    </td>
-  </tr>
-</table>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -183,32 +169,21 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-* [GitHub Banner](https://rmariuzzo.github.io/github-banner/)
-* [Tech Stack](https://www.figma.com/templates/tech-stack-diagram/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -218,4 +193,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [forks-url]: https://github.com/othneildrew/josephhilby/lunch_and_learn/network/members
 [issues-shield]: https://img.shields.io/github/issues/josephhilby/lunch_and_learn.svg?style=for-the-badge
 [issues-url]: https://github.com/josephhilby/lunch_and_learn/issues
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: lib/images/screenshot.png
