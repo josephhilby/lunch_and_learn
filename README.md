@@ -24,7 +24,6 @@
   </a>
 
   <h3 align="center">
-    An awesome README template to jumpstart your projects!
     <br />
     <a href="https://github.com/josephhilby/lunch_and_learn/issues">Report Bug</a>
     ·
@@ -124,48 +123,35 @@ See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for
 <!-- BUILT WITH -->
 ## Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
 
-<img src="lib/images/tech-stack.png" alt="Tech-Stack">
+
+<br />
+<div align="center">
+  <img src="lib/images/tech-stack.png" alt="Tech-Stack" width="50%">
+</div >
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 ## Contact
 
-### Front End Team
-
-<table>
-  <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/######?s=120&v=4"></td>
-  </tr>
-  <tr>
-    <td>Name</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/<username>">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/<username>/">LinkedIn</a>
-    </td>
-  </tr>
-</table>
-
-### Back End Team
-
-<table>
-  <tr>
-    <td><img src="https://avatars.githubusercontent.com/u/108031077?s=120&v=4"></td>
-  </tr>
-  <tr>
-    <td>Joseph Hilby</td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://github.com/josephhilby">GitHub</a><br>
-      <a href="https://www.linkedin.com/in/josephmhilby/">LinkedIn</a>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://avatars.githubusercontent.com/u/108031077?s=120&v=4"></td>
+    </tr>
+    <tr>
+      <td>Joseph Hilby</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/josephhilby">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/josephmhilby/">LinkedIn</a>
+      </td>
+    </tr>
+  </table>
+</div>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -188,25 +174,14 @@ Don't forget to give the project a star! Thanks again!
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
-* [GitHub Banner](https://rmariuzzo.github.io/github-banner/)
-* [Tech Stack](https://www.figma.com/templates/tech-stack-diagram/)
+Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
