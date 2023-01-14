@@ -6,7 +6,7 @@ module Api
       def index
         videos = VideosFacade.get_videos(@country)
         images = ImagesFacade.get_images(@country)
-        render json: LearningResourcesSerializer.new(videos, images)
+        render json: LearningResourcesSerializer.new(@country, videos, images)
       end
 
       private
