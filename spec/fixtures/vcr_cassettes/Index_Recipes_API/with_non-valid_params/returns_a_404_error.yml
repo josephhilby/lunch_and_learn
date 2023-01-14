@@ -19,7 +19,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sat, 14 Jan 2023 13:24:26 GMT
+      - Sat, 14 Jan 2023 15:36:27 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Content-Type:
@@ -29,5 +29,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"status":404,"message":"Not Found"}'
-  recorded_at: Sat, 14 Jan 2023 13:24:26 GMT
+  recorded_at: Sat, 14 Jan 2023 15:36:27 GMT
 recorded_with: VCR 6.1.0

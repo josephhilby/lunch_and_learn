@@ -1,5 +1,5 @@
 class EdamamRecipeService
-	def self.search(country)
+	def self.search_by_country(country)
 		get_url("/api/recipes/v2?type=public&q=#{country}")
 	end
 

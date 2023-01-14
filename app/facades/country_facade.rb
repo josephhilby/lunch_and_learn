@@ -1,6 +1,6 @@
 class CountryFacade
 	def self.random_country
-    RestCountriesService.all_countries.sample[:name][:official]
+    RestCountriesService.all_countries.sample[:name][:common]
 	end
 
 	def self.is_a_country(alleged_country)

@@ -5,6 +5,7 @@ module Api
 
       def index
         recipes = RecipesFacade.get_recipes(@country)
+        render json: RecipesSerializer.new(recipes)
       end
 
       private

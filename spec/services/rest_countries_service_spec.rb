@@ -42,7 +42,7 @@ RSpec.describe RestCountriesService do
 		end
 
 		describe '.conn', :vcr do
-			it 'connects with api.thing.com' do
+			it 'connects with restcountries.com' do
 				conn = RestCountriesService.conn
 				expect(conn.params).to be_a(Hash)
 			end
