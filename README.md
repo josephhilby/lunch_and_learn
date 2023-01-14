@@ -110,6 +110,8 @@ To install and run on your personal computer you will need to do the following:
     $ rails s
     ```
 
+6. Continue with endpoint use
+
 <p align="right">(<a href="#README">back to top</a>)</p>
 
 <!-- ROADMAP -->
