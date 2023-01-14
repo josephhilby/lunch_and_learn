@@ -213,8 +213,8 @@ Thanks again!
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
-Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
+* Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
