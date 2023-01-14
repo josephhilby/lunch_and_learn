@@ -1,7 +1,7 @@
 module Api
   module V1
     class RecipesController < ApplicationController
-      before_action :check_params
+      before_action :check_params, only: [:index]
 
       def index
         recipes = RecipesFacade.get_recipes(@country)

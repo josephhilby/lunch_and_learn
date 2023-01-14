@@ -1,17 +1,9 @@
-class CountryFacade
-	def self.random_country
-    RestCountriesService.all_countries.sample[:name][:official]
+class RecipesFacade
+	def self.get_recipes(country)
+    results(country)
 	end
 
-	def self.is_a_country(alleged_country)
-    if results(alleged_country)
-		  results(alleged_country)[:name][:common]
-    else
-      return nil
-    end
-	end
-
-	def self.results(alleged_country)
-		RestCountriesService.search(alleged_country)[0]
+	def self.results(country)
+		EdamamRecipeService.search_by_country(country)
 	end
 end
