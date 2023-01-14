@@ -117,8 +117,11 @@ To install and run on your personal computer you will need to do the following:
 <!-- ROADMAP -->
 ## Roadmap
 
+Main Goal(s)
 * [ ] Complete MVP
 * [ ] Deploy to Heroku
+
+Stretch Goals
 * [ ] Add 400 level status codes and prams check
 * [ ] Add DELETE for favorite(s) (DELETE '/api/v1/favorites)
 * [ ] Utilize Cashing OR Background Workers
@@ -141,7 +144,7 @@ See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for
 
 2. Feature Delivery
     * Complete all MVP features as directed [here](https://backend.turing.edu/module3/projects/lunch_and_learn/requirements)
-    * Complete 3 of 4
+    * Complete 3 of 4 stretch goals
 
 3. Technical Quality
     * Demonstrate good use of abstraction and encapsulation in Facades and Services
@@ -211,6 +214,7 @@ Thanks again!
 ## Acknowledgments
 
 Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
+Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 

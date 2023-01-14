@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe CountryFacade do
 	describe 'class_methods' do
 		describe '.random_country' do
-			it 'returns a String common name of a randomly selected country', :vcr do
+			it 'returns a String of the "common name" of a randomly selected country', :vcr do
 				expect(CountryFacade.random_country).to be_a(String)
 			end
 		end
@@ -36,8 +36,9 @@ RSpec.describe CountryFacade do
       end
 
       context 'with non-vlid params' do
-        it 'returns a JSON error 404', :vcr do
+        it 'returns nil', :vcr do
           expect(CountryFacade.is_a_country('xkcd')).to be_a(NilClass)
+          expect(CountryFacade.is_a_country('')).to be_a(NilClass)
         end
       end
 		end
