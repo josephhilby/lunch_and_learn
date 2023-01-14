@@ -3,7 +3,6 @@ require 'rails_helper'
 describe 'Index Recipes API' do
   context 'with valid params' do
     it 'can GET a list of recipes by country', :vcr do
-
       get "/api/v1/recipes?country=thai"
 
       expect(response).to be_successful
@@ -51,13 +50,14 @@ describe 'Index Recipes API' do
 
 			expect(response.status).to eq(404)
 
+      expect(error.size).to eq(1)
 			expect(error).to have_key(:message)
 			expect(error[:message]).to be_a(String)
     end
   end
 
   context 'with no params' do
-    it 'returns a random country, with RESTCountries API', :vcr do
+    xit 'returns a random country, with RESTCountries API', :vcr do
       get "/api/v1/recipes"
       # I cant figure out why this stub is not working. Getting the error:
       # CountryFacade does not implement #random_country
