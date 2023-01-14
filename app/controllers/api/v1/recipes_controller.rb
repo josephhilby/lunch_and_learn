@@ -10,7 +10,6 @@ module Api
       private
 
       def check_params
-        require'pry';binding.pry
         if !params[:country]
           @country = CountryFacade.random_country
         elsif !CountryFacade.is_a_country(params[:country])

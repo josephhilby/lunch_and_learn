@@ -1,9 +1,8 @@
 require 'rails_helper'
 
 describe 'Index Recipes API' do
-  # stub API call or use vcr
   context 'with valid params' do
-    it 'can GET a list of recipes by country' do
+    it 'can GET a list of recipes by country', :vcr do
 
       get "/api/v1/recipes?country=thai"
 
@@ -39,22 +38,22 @@ describe 'Index Recipes API' do
 	end
 
   context 'with non-valid params' do
-    it 'returns a 404 error' do
+    it 'returns a 404 error', :vcr do
       get "/api/v1/recipes?country=thatplaceoverthere"
 
       expect(response).not_to be_successful
 
-			thing = JSON.parse(response.body, symbolize_names: true)
+			error = JSON.parse(response.body, symbolize_names: true)
 
 			expect(response.status).to eq(404)
 
-			expect(thing).to have_key(:errors)
-			expect(thing[:errors]).to be_a(String)
+			expect(error).to have_key(:message)
+			expect(error[:message]).to be_a(String)
     end
   end
 
   context 'with no params' do
-    it 'select a country at random with REST Countries API' do
+    it 'returns a random country, with RESTCountries API', :vcr do
       get "/api/v1/recipes"
 
       expect(response).to be_successful
