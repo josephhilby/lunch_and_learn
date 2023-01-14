@@ -4,10 +4,14 @@ class CountryFacade
 	end
 
 	def self.is_a_country(alleged_country)
-		reusults(alleged_country).first
+    if results(alleged_country)
+		  results(alleged_country)[:name][:common]
+    else
+      return nil
+    end
 	end
 
 	def self.results(alleged_country)
-		RestCountriesService.search(alleged_country)
+		RestCountriesService.search(alleged_country)[0]
 	end
 end
