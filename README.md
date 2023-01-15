@@ -116,7 +116,7 @@ To install and run on your personal computer you will need to do the following:
     $ rails s
     ```
 
-8. Now all you need to do is make a request from one of the endpoints. Documentation can be found below.
+8. Now all you need to do is make a request to one of the endpoints. Documentation can be found below.
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
