@@ -379,9 +379,10 @@ Get user info for authentication use on frontend app.
 ## Roadmap
 
 Main Goal(s)
-- [ ] GET /recipes Endpoint
-- [ ] GET /learning_resources Endpoint
-- [ ] POST /users Endpoint
+- [x] GET /recipes Endpoint
+- [x] GET /learning_resources Endpoint
+- [x] POST /users Endpoint
+- [x] POST /sessions
 - [ ] POST /favorites Endpoint
 - [ ] GET /favorites Endpoint
 
