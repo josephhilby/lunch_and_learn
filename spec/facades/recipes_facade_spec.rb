@@ -13,6 +13,7 @@ RSpec.describe RecipesFacade do
       context 'witn non-valid params' do
         it 'returns an empity Array', :vcr do
           expect(RecipesFacade.get_recipes('xkcd')).to eq([])
+          expect(RecipesFacade.get_recipes('')).to eq([])
         end
       end
 		end
