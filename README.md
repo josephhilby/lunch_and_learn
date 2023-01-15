@@ -483,6 +483,7 @@ Thanks again!
 
 * Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
 * Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* API-endpoints: [https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md](https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md)
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
