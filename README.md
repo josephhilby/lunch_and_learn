@@ -66,7 +66,7 @@ Sign up and get started!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Web Usage
+### Web Usage [WIP]
 
 This is a Ruby on Rails web application that was made for the chrome browser and for use with Google OAuth. You will need the following:
 
@@ -88,9 +88,11 @@ This application was made with the following:
 
 To install and run on your personal computer you will need to do the following:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Fork and clone the repo to your local machine
-3. Install gems
+1. Get a free API Key for EDAMAM Recipe at [https://developer.edamam.com/edamam-recipe-api](https://developer.edamam.com/edamam-recipe-api)
+2. Get a free API Key for YouTube at [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started)
+3. Get a free API Key for Pexels at [https://www.pexels.com/api/](https://www.pexels.com/api/)
+4. Fork and clone the repo to your local machine
+5. Install gems
 
    ```sh
    $ bundle install
@@ -98,19 +100,278 @@ To install and run on your personal computer you will need to do the following:
    $ bundle exec figaro install
    ```
 
-4. Enter your API in the `config/application.yml` file
+6. Enter your API in the `config/application.yml` file
 
-   ```yml
-   api-key-name: <YOUR API KEY HERE>
-   ```
+    ```yml
+    edam_app_id: <YOUR APP ID HERE>
+    edam_app_key: <YOUR KEY HERE>
+    yt_key: <YOUR KEY HERE>
+    pexels_token: <YOUR TOKEN HERE>
+    ```
 
-5. Start your rails server in the root directory
+7. Start your rails server in the root directory
 
     ```sh
     $ rails s
     ```
 
-6. Continue with endpoint use
+8. Now all you need to do is make a request from one of the endpoints. Documentation can be found below.
+
+<p align="right">(<a href="#README">back to top</a>)</p>
+
+<!-- ENDPOINTS -->
+## API Endpoints
+
+### GET
+* `localhost:3000`/api/v1/recipes[^1]
+* `localhost:3000`/api/v1/learning_resources
+* `localhost:3000`/api/v1/favorites
+### POST
+* `localhost:3000`/api/v1/users
+* `localhost:3000`/api/v1/sessions
+* `localhost:3000`/api/v1/favorites
+### DELETE
+* `localhost:3000`/api/v1/favorites
+
+---
+
+### GET /api/v1/recipes?country=thailand
+
+Get a list of recipes from a random country (if no params are passed) or by selected country, through params.
+
+**Parameters**
+
+|          Name | Required |  Type   |  Description     |
+| -------------:|:--------:|:-------:| ---------------- |
+|     `country` |    no    | string  | The country you want to get recipes from.   |
+
+
+**Response**
+
+```
+{
+    "data": [
+        {
+            "id": null,
+            "type": "recipe",
+            "attributes": {
+                "title": "Andy Ricker's Naam Cheuam Naam Taan Piip (Palm Sugar Simple Syrup)",
+                "url": "https://www.seriouseats.com/recipes/2013/11/andy-rickers-naam-cheuam-naam-taan-piip-palm-sugar-simple-syrup.html",
+                "country": "thailand",
+                "image": "https://edamam-product-images.s3.amazonaws.com..."
+            }
+        },
+        {
+            "id": null,
+            "type": "recipe",
+            "attributes": {
+                "title": "Sriracha",
+                "url": "http://www.jamieoliver.com/recipes/vegetables-recipes/sriracha/",
+                "country": "thailand",
+                "image": "https://edamam-product-images.s3.amazonaws.com/."
+            }
+        },
+        {...},
+        {...},
+        {...},
+        {etc},
+    ]
+}
+```
+
+### GET /api/v1/learning_resources?country=laos
+
+Get a list of learning resources from a random country (if no params are passed) or by selected country, through params.
+
+**Parameters**
+
+|          Name | Required |  Type   |  Description     |
+| -------------:|:--------:|:-------:| ---------------- |
+|     `country` |    no    | string  | The country you want to get learning resources from.   |
+
+**Response**
+
+```
+{
+    "data": {
+        "id": null,
+        "type": "learning_resource",
+        "attributes": {
+            "country": "laos",
+            "video": {
+                "title": "A Super Quick History of Laos",
+                "youtube_video_id": "uw8hjVqxMXw"
+            },
+            "images": [
+                {
+                    "alt_tag": "standing statue and temples landmark during daytime",
+                    "url": "https://images.unsplash.com/photo-1528181304800-259b08848526?ixid=MnwzNzg2NzV8MHwxfHNlYXJjaHwxfHx0aGFpbGFuZHxlbnwwfHx8fDE2Njc4Njk1NTA&ixlib=rb-4.0.3"
+                },
+                {
+                    "alt_tag": "five brown wooden boats",
+                    "url": "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixid=MnwzNzg2NzV8MHwxfHNlYXJjaHwyfHx0aGFpbGFuZHxlbnwwfHx8fDE2Njc4Njk1NTA&ixlib=rb-4.0.3"
+                },
+                {
+                    "alt_tag": "orange temples during daytime",
+                    "url": "https://images.unsplash.com/photo-1563492065599-3520f775eeed?ixid=MnwzNzg2NzV8MHwxfHNlYXJjaHwzfHx0aGFpbGFuZHxlbnwwfHx8fDE2Njc4Njk1NTA&ixlib=rb-4.0.3"
+                },
+                {...},
+                {...},
+                {...},
+                {etc},
+              ]
+        }
+    }
+}
+```
+
+### GET /api/v1/favorites?api_key=jgn983hy48thw9begh98h4539h4
+
+Get a list of your user's favorite recipes.
+
+**Parameters**
+
+|          Name | Required |  Type   |  Description     |
+| -------------:|:--------:|:-------:| ---------------- |
+|     `api_key` |    yes   | string  | A unique key created after a successful POST /api/v1/users used to identify user requests   |
+
+**Response**
+
+```
+{
+    "data": [
+        {
+            "id": "1",
+            "type": "favorite",
+            "attributes": {
+                "recipe_title": "Recipe: Egyptian Tomato Soup",
+                "recipe_link": "http://www.thekitchn.com/recipe-egyptian-tomato-soup-weeknight....",
+                "country": "egypt",
+                "created_at": "2022-11-02T02:17:54.111Z"
+            }
+        },
+        {
+            "id": "2",
+            "type": "favorite",
+            "attributes": {
+                "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)",
+                "recipe_link": "https://www.tastingtable.com/.....",
+                "country": "thailand",
+                "created_at": "2022-11-07T03:44:08.917Z"
+            }
+        }
+    ]
+ }
+```
+
+### POST /api/v1/users
+
+Create a new user.
+
+**Parameters (JSON payload in request body)**
+
+```
+{
+  "name": "Athena Dao",
+  "email": "athenadao@bestgirlever.com",
+  "password": "supersecretpassword",
+  "password_confirmation": "supersecretpassword"
+}
+```
+
+**Response**
+
+```
+{
+  "data": {
+    "type": "user",
+    "id": "1",
+    "attributes": {
+      "name": "Athena Dao",
+      "email": "athenadao@bestgirlever.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
+
+### POST /api/v1/sessions
+
+Get user info for authentication use on frontend app.
+
+**Parameters (JSON payload in request body)**
+
+```
+{
+  "email": "athenadao@bestgirlever.com",
+  "password": "supersecretpassword"
+}
+```
+
+**Response**
+
+```
+{
+  "data": {
+    "type": "user",
+    "id": "1",
+    "attributes": {
+      "name": "Athena Dao",
+      "email": "athenadao@bestgirlever.com",
+      "api_key": "jgn983hy48thw9begh98h4539h4"
+    }
+  }
+}
+```
+
+### POST /api/v1/favorites
+
+Get user info for authentication use on frontend app.
+
+**Parameters (JSON payload in request body)**
+
+```
+{
+    "api_key": "jgn983hy48thw9begh98h4539h4",
+    "country": "thailand",
+    "recipe_link": "https://www.tastingtable.com/.....",
+    "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
+}
+```
+
+**Response**
+
+```
+{
+    "success": "Favorite added successfully"
+}
+```
+
+### DELETE /api/v1/favorites
+
+Get user info for authentication use on frontend app.
+
+**Parameters (JSON payload in request body)**
+
+```
+{
+    "api_key": "jgn983hy48thw9begh98h4539h4",
+    "country": "thailand",
+    "recipe_link": "https://www.tastingtable.com/.....",
+    "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
+}
+```
+
+**Response**
+
+```
+{
+    "success": "Favorite removed successfully"
+}
+```
+
+
+[^1]: Note: To changet the port, go to `config/puma.rb` and enter your desired port #: `port        ENV.fetch("PORT") { <YOUR NUMBER HERE> }`
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
@@ -118,14 +379,20 @@ To install and run on your personal computer you will need to do the following:
 ## Roadmap
 
 Main Goal(s)
-* [ ] Complete MVP
-* [ ] Deploy to Heroku
+- [ ] GET /recipes Endpoint
+- [ ] GET /learning_resources Endpoint
+- [ ] POST /users Endpoint
+- [ ] POST /favorites Endpoint
+- [ ] GET /favorites Endpoint
 
 Stretch Goals
-* [ ] Add 400 level status codes and prams check
-* [ ] Add DELETE for favorite(s) (DELETE '/api/v1/favorites)
-* [ ] Utilize Cashing OR Background Workers
-* [ ] Implement Google OAuth
+- [x] Add 400 level status codes and prams check
+- [x] Implement basic authentication with bcrypt
+- [ ] Add DELETE /favorites Endpoint
+- [ ] Utilize Cashing OR Background Workers
+- [ ] Generate basic front-end
+- [ ] Add Google OAuth
+- [ ] Deploy to Heroku
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
 ### Learning Goals
