@@ -7,36 +7,46 @@ describe 'Index Learning Resources API' do
 
       expect(response).to be_successful
 
-      recipes = JSON.parse(response.body, symbolize_names: true)
+      resources = JSON.parse(response.body, symbolize_names: true)
 
-      expect(recipes[:data].count).to eq(20)
-      expect(recipes.size).to eq(1)
+      expect(resources.size).to eq(1)
+      data = resources[:data]
 
-      recipes[:data].each do |recipe|
-        expect(recipe.size).to eq(3)
-        expect(recipe).to have_key(:id)
-        expect(recipe[:id]).to be_an(NilClass)
+      expect(data.size).to eq(3)
+      expect(data).to have_key(:id)
+      expect(data[:id]).to be_an(NilClass)
 
-        expect(recipe).to have_key(:type)
-        expect(recipe[:type]).to be_an(String)
-        expect(recipe[:type]).to eq('recipe')
+      expect(data).to have_key(:type)
+      expect(data[:type]).to be_an(String)
+      expect(data[:type]).to eq('learning_resource')
 
-        expect(recipe).to have_key(:attributes)
-        expect(recipe[:attributes]).to be_an(Hash)
+      expect(data).to have_key(:attributes)
+      expect(data[:attributes]).to be_an(Hash)
+      expect(data[:attributes].size).to eq(3)
 
-        expect(recipe[:attributes].size).to eq(4)
-        expect(recipe[:attributes]).to have_key(:title)
-        expect(recipe[:attributes][:title]).to be_a(String)
+        expect(data[:attributes]).to have_key(:country)
+        expect(data[:attributes][:country]).to be_a(String)
 
-        expect(recipe[:attributes]).to have_key(:url)
-        expect(recipe[:attributes][:url]).to be_a(String)
+        expect(data[:attributes]).to have_key(:video)
+        expect(data[:attributes][:video]).to be_a(Hash)
+        expect(data[:attributes][:video].size).to eq(2)
 
-        expect(recipe[:attributes]).to have_key(:country)
-        expect(recipe[:attributes][:country]).to be_a(String)
+          expect(data[:attributes][:video]).to have_key(:title)
+          expect(data[:attributes][:video][:title]).to be_a(String)
 
-        expect(recipe[:attributes]).to have_key(:image)
-        expect(recipe[:attributes][:image]).to be_a(String)
-      end
+          expect(data[:attributes][:video]).to have_key(:youtube_video_id)
+          expect(data[:attributes][:video][:youtube_video_id]).to be_a(String)
+
+        expect(data[:attributes]).to have_key(:images)
+        expect(data[:attributes][:images]).to be_a(Array)
+        expect(data[:attributes][:images].first).to be_a(Hash)
+        expect(data[:attributes][:images].first.size).to eq(2)
+
+          expect(data[:attributes][:image].first).to have_key(:alt_tag)
+          expect(data[:attributes][:image].first[:alt_tag]).to be_a(String)
+
+          expect(data[:attributes][:image].first).to have_key(:url)
+          expect(data[:attributes][:image].first[:url]).to be_a(String)
     end
 	end
 
@@ -65,35 +75,46 @@ describe 'Index Learning Resources API' do
 
       expect(response).to be_successful
 
-      recipes = JSON.parse(response.body, symbolize_names: true)
+      resources = JSON.parse(response.body, symbolize_names: true)
 
-      expect(recipes[:data].count).to be(20)
-      expect(recipes.size).to eq(1)
+      expect(resources.size).to eq(1)
+      data = resources[:data]
 
-      recipes[:data].each do |recipe|
-        expect(recipe.size).to eq(3)
-        expect(recipe).to have_key(:id)
-        expect(recipe[:id]).to be_an(NilClass)
+      expect(data.size).to eq(3)
+      expect(data).to have_key(:id)
+      expect(data[:id]).to be_an(NilClass)
 
-        expect(recipe).to have_key(:type)
-        expect(recipe[:type]).to be_an(String)
-        expect(recipe[:type]).to eq('recipe')
+      expect(data).to have_key(:type)
+      expect(data[:type]).to be_an(String)
+      expect(data[:type]).to eq('learning_resource')
 
-        expect(recipe).to have_key(:attributes)
-        expect(recipe[:attributes]).to be_an(Hash)
+      expect(data).to have_key(:attributes)
+      expect(data[:attributes]).to be_an(Hash)
+      expect(data[:attributes].size).to eq(3)
 
-        expect(recipe[:attributes].size).to eq(4)
-        expect(recipe[:attributes]).to have_key(:title)
-        expect(recipe[:attributes][:title]).to be_a(String)
+        expect(data[:attributes]).to have_key(:country)
+        expect(data[:attributes][:country]).to be_a(String)
 
-        expect(recipe[:attributes]).to have_key(:url)
-        expect(recipe[:attributes][:url]).to be_a(String)
+        expect(data[:attributes]).to have_key(:video)
+        expect(data[:attributes][:video]).to be_a(Hash)
+        expect(data[:attributes][:video].size).to eq(2)
 
-        expect(recipe[:attributes]).to have_key(:country)
-        expect(recipe[:attributes][:country]).to be_a(String)
+          expect(data[:attributes][:video]).to have_key(:title)
+          expect(data[:attributes][:video][:title]).to be_a(String)
 
-        expect(recipe[:attributes]).to have_key(:image)
-        expect(recipe[:attributes][:image]).to be_a(String)
+          expect(data[:attributes][:video]).to have_key(:youtube_video_id)
+          expect(data[:attributes][:video][:youtube_video_id]).to be_a(String)
+
+        expect(data[:attributes]).to have_key(:images)
+        expect(data[:attributes][:images]).to be_a(Array)
+        expect(data[:attributes][:images].first).to be_a(Hash)
+        expect(data[:attributes][:images].first.size).to eq(2)
+
+          expect(data[:attributes][:image].first).to have_key(:alt_tag)
+          expect(data[:attributes][:image].first[:alt_tag]).to be_a(String)
+
+          expect(data[:attributes][:image].first).to have_key(:url)
+          expect(data[:attributes][:image].first[:url]).to be_a(String)
       end
     end
   end
