@@ -4,9 +4,12 @@ module Api
       before_action :check_params, only: [:index]
 
       def index
-        videos = VideosFacade.get_videos(@country)
+        video = VideosFacade.get_videos(@country).first
         images = ImagesFacade.get_images(@country)
-        render json: LearningResourcesSerializer.new(videos, images)
+        country = Country.new(@country)
+        learning_resource = LearningResource.new(country, video, images)
+
+        render json: LearningResourcesSerializer.new(learning_resource)
       end
 
       private

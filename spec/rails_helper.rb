@@ -1,5 +1,7 @@
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_filter "/spec/"
+end
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -78,7 +80,8 @@ VCR.configure do |config|
   config.filter_sensitive_data('app_id') { ENV['edam_app_id'] }
   config.filter_sensitive_data('app_key') { ENV['edam_app_key'] }
   config.filter_sensitive_data('key') { ENV['yt_key'] }
-  config.filter_sensitive_data('Authorization') { ENV['pixles_key'] }
+  config.filter_sensitive_data('Authorization') { ENV['pixles_token'] }
 	config.default_cassette_options = { re_record_interval: 7.days }
 	config.configure_rspec_metadata!
+  # config.debug_logger = File.open('vcr.log', 'w')
 end

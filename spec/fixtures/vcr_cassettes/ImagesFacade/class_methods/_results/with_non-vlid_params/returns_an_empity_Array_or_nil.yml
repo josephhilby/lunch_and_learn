@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?query=xkcd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 15 Jan 2023 16:17:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '75'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 789feba4cfcaacc1-ATL
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - __cf_bm=6oRGy_jJVgnOLduDBP4MLdK2RCD11uXi_pyyPf19oPk-1673799435-0-AV0XOPbISykfLFQ7BOLsIdl04/VVEMnRMiVMQdCSoxTeRxKrA8LjVtqmPq6ILrb3fZZaagTH89UB14YFpJPIrhc=;
+        path=/; expires=Sun, 15-Jan-23 16:47:15 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=f65CckpWiMoA_LCAh7ZxkCKGx0hs7A7WFntiJwx1jUc-1673786038-0-AYHd36XP7gmtzAepqLVJIqUcFljasS012QvcEmNyLKpWHWxdBJnRW5wHIzpxlyponKbuniWIt9FovpmbT3BgaFg=;
+        path=/; expires=Sun, 15-Jan-23 13:03:58 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19916'
+      X-Ratelimit-Reset:
+      - '1676248184'
+      X-Request-Id:
+      - c94fa819-92a3-45db-aba1-5f285a4fc72a
+      X-Runtime:
+      - '0.129061'
+      X-Server:
+      - alpaca
+      X-Tyk-Cached-Response:
+      - '1'
+      Server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":15,"photos":[],"total_results":0}'
+  recorded_at: Sun, 15 Jan 2023 16:17:15 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?query=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 15 Jan 2023 16:17:15 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '44'
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 789feba5cb70244b-ATL
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - __cf_bm=9lZzO0H5zO67fSfZFznyD25dX8nmFh9U4tZmVSV9lGg-1673799435-0-ATvTTo4aCcF0uGRgq03FmzfEFP8ayuFKWHnVdRNoFPMMUcutrQLIrYqMGu3KR6XM+lcjCOWBMshBKb2lP4l3QrI=;
+        path=/; expires=Sun, 15-Jan-23 16:47:15 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cf_bm=kPALZD4i86.pyhvc3_xf3.aOA_5VQD6mh5BCnIRtmRg-1673799435-0-AWobTx/Tj6K2Vp8FnyA5Hh4HcL4LQUCBhfGUbTtJm1QJDgDXl7KCfGgFi6/lJM/z4lkzw+82af9Z6rqDzW7/XRw=;
+        path=/; expires=Sun, 15-Jan-23 16:47:15 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Origin, Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19915'
+      X-Ratelimit-Reset:
+      - '1676248184'
+      X-Request-Id:
+      - 5411a57f-3903-450a-98a2-34671e6ee21d
+      X-Runtime:
+      - '0.003123'
+      X-Server:
+      - anteater
+      Server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"code":"No query param given"}'
+  recorded_at: Sun, 15 Jan 2023 16:17:15 GMT
+recorded_with: VCR 6.1.0
