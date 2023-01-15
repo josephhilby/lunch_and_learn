@@ -11,6 +11,6 @@ class ImagesFacade
 	end
 
 	def self.results(country)
-		PixleImageService.search_by_country(country)[:photos]
+		PexelsImageService.search_by_country(country)[:photos]
 	end
 end
