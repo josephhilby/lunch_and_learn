@@ -4,10 +4,10 @@ module Api
 
       def create
         user = User.find_by(email: user_params[:email])
-        if user && user.authenticate(params[:password])
+        if user && user.authenticate(user_params[:password])
           render json: UserSerializer.new(user)
         else
-          render json: { message: user.errors.full_messages.to_sentence }, status: 400
+          render json: { message: "Unknown username or password" }, status: 400
         end
       end
 
