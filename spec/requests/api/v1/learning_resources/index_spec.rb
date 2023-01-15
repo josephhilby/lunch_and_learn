@@ -42,11 +42,11 @@ describe 'Index Learning Resources API' do
         expect(data[:attributes][:images].first).to be_a(Hash)
         expect(data[:attributes][:images].first.size).to eq(2)
 
-          expect(data[:attributes][:image].first).to have_key(:alt_tag)
-          expect(data[:attributes][:image].first[:alt_tag]).to be_a(String)
+          expect(data[:attributes][:images].first).to have_key(:alt_tag)
+          expect(data[:attributes][:images].first[:alt_tag]).to be_a(String)
 
-          expect(data[:attributes][:image].first).to have_key(:url)
-          expect(data[:attributes][:image].first[:url]).to be_a(String)
+          expect(data[:attributes][:images].first).to have_key(:url)
+          expect(data[:attributes][:images].first[:url]).to be_a(String)
     end
 	end
 
@@ -110,12 +110,11 @@ describe 'Index Learning Resources API' do
         expect(data[:attributes][:images].first).to be_a(Hash)
         expect(data[:attributes][:images].first.size).to eq(2)
 
-          expect(data[:attributes][:image].first).to have_key(:alt_tag)
-          expect(data[:attributes][:image].first[:alt_tag]).to be_a(String)
+          expect(data[:attributes][:images].first).to have_key(:alt_tag)
+          expect(data[:attributes][:images].first[:alt_tag]).to be_a(String)
 
-          expect(data[:attributes][:image].first).to have_key(:url)
-          expect(data[:attributes][:image].first[:url]).to be_a(String)
-      end
+          expect(data[:attributes][:images].first).to have_key(:url)
+          expect(data[:attributes][:images].first[:url]).to be_a(String)
     end
   end
 end
