@@ -67,7 +67,7 @@ Sign up and get started!
 <!-- GETTING STARTED -->
 ## Getting Started
 
-### Web Usage [WIP]
+### Web Usage [Work In Progress]
 
 This is a Ruby on Rails web application that was made for the chrome browser and for use with Google OAuth. You will need the following:
 
@@ -76,9 +76,9 @@ This is a Ruby on Rails web application that was made for the chrome browser and
 
 To get started, follow the link below and register with your Google account. Once you are registered you will be able to:
 
-* Search for recipes by country
-* Have ***Lunch and Learn*** select a country for you
+* Search for recipes by country OR have ***Lunch and Learn*** select a country for you
 * Play an educational video on that select county.
+* Enjoy a photo album of life in that country.
 
 ### Local Installation
 
@@ -116,7 +116,7 @@ To install and run on your personal computer you will need to do the following:
     $ rails s
     ```
 
-8. Now all you need to do is make a request to one of the endpoints. Documentation can be found below.
+8. Now all you need to do is make a request to one of the endpoints. Documentation for all API Endpoints can be found below.
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
@@ -138,7 +138,7 @@ To install and run on your personal computer you will need to do the following:
 
 ### GET /api/v1/recipes?country=thailand
 
-Get a list of recipes from a random country (if no params are passed) or by selected country, through params.
+Get a list of recipes from a random country (if no params are passed) OR by selected country, through params.
 
 **Parameters**
 
@@ -182,7 +182,7 @@ Get a list of recipes from a random country (if no params are passed) or by sele
 
 ### GET /api/v1/learning_resources?country=laos
 
-Get a list of learning resources from a random country (if no params are passed) or by selected country, through params.
+Get a list of learning resources from a random country (if no params are passed) OR by selected country, through params.
 
 **Parameters**
 
@@ -327,7 +327,7 @@ Get user info for authentication use on frontend app.
 
 ### POST /api/v1/favorites
 
-Get user info for authentication use on frontend app.
+Create a new favorite recipe for the select user.
 
 **Parameters (JSON payload in request body)**
 
@@ -350,7 +350,7 @@ Get user info for authentication use on frontend app.
 
 ### DELETE /api/v1/favorites
 
-Get user info for authentication use on frontend app.
+Delete a selected favorite recipe for the select user.
 
 **Parameters (JSON payload in request body)**
 
@@ -371,7 +371,6 @@ Get user info for authentication use on frontend app.
 }
 ```
 
-
 [^1]: Note: To changet the port, go to `config/puma.rb` and enter your desired port #: `port        ENV.fetch("PORT") { <YOUR NUMBER HERE> }`
 
 <p align="right">(<a href="#README">back to top</a>)</p>
@@ -390,13 +389,14 @@ Main Goal(s)
 Stretch Goals
 - [x] Add 400 level status codes and prams check
 - [x] Implement basic authentication with bcrypt
-- [ ] Add DELETE /favorites Endpoint
+- [ ] DELETE /favorites Endpoint
 - [ ] Utilize Cashing OR Background Workers
 - [ ] Generate basic front-end
 - [ ] Add Google OAuth
 - [ ] Deploy to Heroku
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
+
 ### Learning Goals
 * Expose an API that aggregates data from multiple external APIs
 * Expose an API that requires and authentication token
@@ -412,7 +412,7 @@ See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for
     * Discuss test coverage, happy path, sad path, and edge cases
 
 2. Feature Delivery
-    * Complete all MVP features as directed [here](https://backend.turing.edu/module3/projects/lunch_and_learn/requirements)
+    * Complete all MVP features (Roadmap: Main Goals) as directed [here](https://backend.turing.edu/module3/projects/lunch_and_learn/requirements)
     * Complete 3 of 4 stretch goals
 
 3. Technical Quality
@@ -431,7 +431,6 @@ See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for
 ## Built With
 
 Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
-
 
 <br />
 <div align="center">
