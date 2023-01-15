@@ -37,6 +37,7 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#api-endpoints">API Endpoints</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#contact">Contact</a></li>
