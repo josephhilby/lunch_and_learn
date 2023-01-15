@@ -6,6 +6,6 @@ class VideosFacade
 	end
 
 	def self.results(country)
-		YouTubeService.search_by_country(country)
+		YouTubeService.search_mr_history_by_country(country)
 	end
 end

@@ -10,7 +10,7 @@ class PixleImageService
 	def self.conn
 		Faraday.new(url: 'https://api.pexels.com') do |f|
 			f.adapter Faraday.default_adapter
-      f.params['Authorization'] = ENV['pixles_token']
+      f.headers['Authorization'] = ENV['pixles_token']
 		end
 	end
 end

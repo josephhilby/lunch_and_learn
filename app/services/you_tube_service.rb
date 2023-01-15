@@ -1,5 +1,5 @@
-class RestCountriesService
-	def self.search_by_country(country)
+class YouTubeService
+	def self.search_mr_history_by_country(country)
 		get_url("/youtube/v3/search?part=snippet&channelId=UCluQ5yInbeAkkeCndNnUhpw&q=#{country}&type=video")
 	end
 
