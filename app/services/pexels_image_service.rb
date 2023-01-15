@@ -1,4 +1,4 @@
-class PixleImageService
+class PexelsImageService
 	def self.search_by_country(country)
 		get_url("/v1/search?query=#{country}")
 	end
@@ -10,7 +10,7 @@ class PixleImageService
 	def self.conn
 		Faraday.new(url: 'https://api.pexels.com') do |f|
 			f.adapter Faraday.default_adapter
-      f.headers['Authorization'] = ENV['pixles_token']
+      f.headers['Authorization'] = ENV['pexels_token']
 		end
 	end
 end
