@@ -13,7 +13,7 @@ module Api
       end
 
       def create
-        new_favorite = Favorite.new(favorite_params)
+        new_favorite = Favorite.find_or_initialize_by(favorite_params)
         user = User.find_by(api_key: params[:api_key])
         if new_favorite.save && user
           new_user_favorite = UsersFavorite.create(user_id: user.id, favorite_id: new_favorite.id)
