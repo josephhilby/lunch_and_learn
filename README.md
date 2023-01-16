@@ -93,7 +93,7 @@ To install and run on your personal computer you will need to do the following:
 2. Get a free API Key for YouTube at [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started)
 3. Get a free API Key for Pexels at [https://www.pexels.com/api/](https://www.pexels.com/api/)
 4. Fork and clone the repo to your local machine
-5. Install gems
+5. Install gems and create database
 
    ```sh
    $ bundle install
@@ -145,7 +145,7 @@ end
 ```
       
 </td>
-<td><img src="lib/images/database_v2.png" alt="Database" width="40%"></td>
+<td><img src="lib/images/database_v2.png" alt="Database"></td>
 </tr>
 </table>
 
@@ -434,7 +434,7 @@ Main Goal(s)
 - [x] GET /learning_resources Endpoint
 - [x] POST /users Endpoint
 - [x] POST /sessions
-- [ ] POST /favorites Endpoint
+- [x] POST /favorites Endpoint
 - [ ] GET /favorites Endpoint
 
 Stretch Goals
