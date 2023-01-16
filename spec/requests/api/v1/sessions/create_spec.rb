@@ -6,14 +6,14 @@ describe "Create Sessions API" do
   end
 
   context ' with valid params' do
-    it "can POST a new user, return JSON response" do
+    it "can POST a new session, return JSON response" do
       user_params = ({
           email: 'email@user.com',
           password: 'password'
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/sessions", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/sessions", headers: headers, params: JSON.generate(user_params)
 
       expect(response).to be_successful
 
@@ -56,13 +56,13 @@ describe "Create Sessions API" do
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/sessions", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/sessions", headers: headers, params: JSON.generate(user_params)
 
       expect(response).not_to be_successful
 
       error = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response.status).to eq(400)
+      expect(response.status).to eq(401)
 
       expect(error.size).to eq(1)
 			expect(error).to have_key(:message)
@@ -78,13 +78,13 @@ describe "Create Sessions API" do
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/sessions", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/sessions", headers: headers, params: JSON.generate(user_params)
 
       expect(response).not_to be_successful
 
       error = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response.status).to eq(400)
+      expect(response.status).to eq(401)
 
       expect(error.size).to eq(1)
 			expect(error).to have_key(:message)

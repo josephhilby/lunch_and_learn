@@ -11,7 +11,7 @@ describe "Create Users API" do
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/users", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
 
       expect(response).to be_successful
 
@@ -56,7 +56,7 @@ describe "Create Users API" do
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/users", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
 
       expect(response).not_to be_successful
 
@@ -80,7 +80,7 @@ describe "Create Users API" do
       })
       headers = {"CONTENT_TYPE" => "application/json"}
 
-      post "/api/v1/users", headers: headers, params: JSON.generate(user: user_params)
+      post "/api/v1/users", headers: headers, params: JSON.generate(user_params)
 
       expect(response).not_to be_successful
 

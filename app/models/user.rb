@@ -8,4 +8,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true, presence: true
 
   has_secure_password
+
+  has_many :users_favorites, dependent: :destroy
+  has_many :favorites, through: :users_favorites
 end

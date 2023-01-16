@@ -101,6 +101,11 @@ To install and run on your personal computer you will need to do the following:
    $ bundle exec figaro install
    ```
 
+<br />
+<div align="center">
+  <img src="lib/images/database.png" alt="Database" width="50%">
+</div >
+
 6. Enter your API in the `config/application.yml` file
 
     ```yml
@@ -485,6 +490,7 @@ Thanks again!
 ## Acknowledgments
 
 * Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
+* DBdiagram.io [https://dbdiagram.io/home](https://dbdiagram.io/home)
 * Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * API-endpoints: [https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md](https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md)
 
