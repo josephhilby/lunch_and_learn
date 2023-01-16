@@ -33,6 +33,7 @@ module Api
         elsif !select_favorite || !user.favorites.include?(select_favorite)
           render json: { message: 'Not Found' }, status: 404
         else
+          # This setup will lead to a case where I could be hanging on to old Favorite objects in DB. Need to find/create a dependent destroy method/job for old Favorite objects, that are no longer on users_favorite joins table. Recommend task for background workers to clean out old data periodically.
           user_favorite = user.users_favorites.find_by(favorite_id: select_favorite.id)
           UsersFavorite.delete(user_favorite.id)
           render json: { success: "Favorite removed successfully" }, status: 200
