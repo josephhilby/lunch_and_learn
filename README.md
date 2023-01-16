@@ -103,13 +103,13 @@ To install and run on your personal computer you will need to do the following:
 
 <br />
 
-<table border="0">
+<table border="0" style="word-wrap:break-word; table-layout: fixed; width: 100%;">
 <tr>
 <th><b style="font-size:30px">`schema.rb`</b></th>
 <th><b style="font-size:30px">DB Diagram</b></th>
 </tr>
 <tr>
-<td>
+<td style="width: 60%">
  
 ```ruby
 ActiveRecord::Schema.define(version: 2023_01_15_233149) do
@@ -145,7 +145,7 @@ end
 ```
       
 </td>
-<td><img src="lib/images/database_v2.png" alt="Database" width='100%'></td>
+<td style="width: 40%"><img src="lib/images/database_v2.png" alt="Database" style='width: 100%'></td>
 </tr>
 </table>
 
