@@ -62,7 +62,7 @@ describe "Create Sessions API" do
 
       error = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response.status).to eq(400)
+      expect(response.status).to eq(401)
 
       expect(error.size).to eq(1)
 			expect(error).to have_key(:message)
@@ -84,7 +84,7 @@ describe "Create Sessions API" do
 
       error = JSON.parse(response.body, symbolize_names: true)
 
-      expect(response.status).to eq(400)
+      expect(response.status).to eq(401)
 
       expect(error.size).to eq(1)
 			expect(error).to have_key(:message)
