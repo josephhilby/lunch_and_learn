@@ -440,7 +440,7 @@ Main Goal(s)
 Stretch Goals
 - [x] Add 400 level status codes and prams check
 - [x] Implement basic authentication with bcrypt
-- [ ] DELETE /favorites Endpoint
+- [x] DELETE /favorites Endpoint
 - [ ] Utilize Cashing OR Background Workers
 
 Super Stretch Goals
