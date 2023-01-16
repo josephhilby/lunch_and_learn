@@ -298,7 +298,7 @@ Create a new user.
 
 ### POST /api/v1/sessions
 
-Get user info for authentication use on frontend app.
+Get user info for authentication use on front-end app.
 
 **Parameters (JSON payload in request body)**
 
