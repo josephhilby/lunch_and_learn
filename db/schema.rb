@@ -33,12 +33,12 @@ ActiveRecord::Schema.define(version: 2023_01_15_233149) do
   end
 
   create_table "users_favorites", force: :cascade do |t|
-    t.bigint "users_id"
-    t.bigint "favorites_id"
-    t.index ["favorites_id"], name: "index_users_favorites_on_favorites_id"
-    t.index ["users_id"], name: "index_users_favorites_on_users_id"
+    t.bigint "user_id"
+    t.bigint "favorite_id"
+    t.index ["favorite_id"], name: "index_users_favorites_on_favorite_id"
+    t.index ["user_id"], name: "index_users_favorites_on_user_id"
   end
 
-  add_foreign_key "users_favorites", "favorites", column: "favorites_id"
-  add_foreign_key "users_favorites", "users", column: "users_id"
+  add_foreign_key "users_favorites", "favorites"
+  add_foreign_key "users_favorites", "users"
 end
