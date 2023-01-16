@@ -125,7 +125,7 @@ To install and run on your personal computer you will need to do the following:
 
 ### GET
 * `localhost:3000`/api/v1/recipes[^1]
-* `localhost:3000`/api/v1/learning_resources
+* `localhost:3000`/api/v1/learning_resources[^2]
 * `localhost:3000`/api/v1/favorites
 ### POST
 * `localhost:3000`/api/v1/users
@@ -372,6 +372,7 @@ Delete a selected favorite recipe for the select user.
 ```
 
 [^1]: Note: To changet the port, go to `config/puma.rb` and enter your desired port #: `port        ENV.fetch("PORT") { <YOUR NUMBER HERE> }`
+[^2]: Note: The `:country` section in the JSON Response refers to the search criteria. If no video is found on that country, a video on a related country (by culture or geographic area) will instead be returned.
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
