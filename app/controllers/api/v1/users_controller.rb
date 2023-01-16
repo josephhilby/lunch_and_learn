@@ -5,7 +5,8 @@ module Api
       def create
         new_user = User.new(user_params)
         # this is not a good solution, need to find a user unique way of generating key
-        new_user[:api_key] = SecureRandom.base64
+
+        new_user[:api_key] = SecureRandom.urlsafe_base64
         if new_user.save
           render json: UserSerializer.new(new_user), status: 201
         else
