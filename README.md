@@ -391,6 +391,8 @@ Stretch Goals
 - [x] Implement basic authentication with bcrypt
 - [ ] DELETE /favorites Endpoint
 - [ ] Utilize Cashing OR Background Workers
+
+Super Stretch Goals
 - [ ] Generate basic front-end
 - [ ] Add Google OAuth
 - [ ] Deploy to Heroku
