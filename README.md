@@ -89,11 +89,11 @@ This application was made with the following:
 
 To install and run on your personal computer you will need to do the following:
 
-1. Get a free API Key for EDAMAM Recipe at [https://developer.edamam.com/edamam-recipe-api](https://developer.edamam.com/edamam-recipe-api)
-2. Get a free API Key for YouTube at [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started)
-3. Get a free API Key for Pexels at [https://www.pexels.com/api/](https://www.pexels.com/api/)
-4. Fork and clone the repo to your local machine
-5. Install gems and create database
+1. Get a free API Key for EDAMAM Recipe at [https://developer.edamam.com/edamam-recipe-api](https://developer.edamam.com/edamam-recipe-api).
+2. Get a free API Key for YouTube at [https://developers.google.com/youtube/v3/getting-started](https://developers.google.com/youtube/v3/getting-started).
+3. Get a free API Key for Pexels at [https://www.pexels.com/api/](https://www.pexels.com/api/).
+4. Fork and clone the repo to your local machine.
+5. Install gems and create database.
 
    ```sh
    $ bundle install
@@ -149,7 +149,7 @@ end
 </tr>
 </table>
 
-6. Enter your API in the `config/application.yml` file
+6. Enter your API in the `config/application.yml` file.
 
     ```yml
     edam_app_id: <YOUR APP ID HERE>
@@ -158,13 +158,13 @@ end
     pexels_token: <YOUR TOKEN HERE>
     ```
 
-7. Start your rails server in the root directory
+7. Start your rails server in the root directory.
 
     ```sh
     $ rails s
     ```
 
-8. Now all you need to do is make a request to one of the endpoints. Documentation for all API Endpoints can be found below. OR if you prefer to run the simple front-end I created, follow [this_link](https://github.com/josephhilby/lunch_and_learn_front_end)
+8. Now all you need to do is make a request to one of the endpoints. Documentation for all API Endpoints can be found below. OR if you prefer to run the simple front-end I created, follow [this_link](https://github.com/josephhilby/lunch_and_learn_front_end).
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
