@@ -25,7 +25,19 @@ module Api
         end
       end
 
-      def destroy; end
+      def destroy
+        user = User.find_by(api_key: params[:api_key])
+        select_favorite = Favorite.find_select_favorite(favorite_params)
+        if !user
+          render json: { message: "Invalid or missing api_key" }, status: 401
+        elsif !select_favorite || !user.favorites.include?(select_favorite)
+          render json: { message: 'Not Found' }, status: 404
+        else
+          user_favorite = user.users_favorites.find_by(favorite_id: select_favorite.id)
+          UsersFavorite.delete(user_favorite.id)
+          render json: { success: "Favorite removed successfully" }, status: 200
+        end
+      end
 
       private
 
