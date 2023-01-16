@@ -145,7 +145,7 @@ end
 ```
       
 </td>
-<td><img src="lib/images/database_v2.png" alt="Database"></td>
+<td><img src="lib/images/database_v2.png" alt="Database" width='100%'></td>
 </tr>
 </table>
 
