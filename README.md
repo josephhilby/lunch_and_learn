@@ -102,49 +102,51 @@ To install and run on your personal computer you will need to do the following:
    ```
 
 <br />
+
 <table border="0">
- <tr>
-    <td><b style="font-size:30px">`schema.rb`</b></td>
-    <td><b style="font-size:30px">DB Diagram</b></td>
- </tr>
- <tr>
-    <td>
-    ```
-      ActiveRecord::Schema.define(version: 2023_01_15_233149) do
-        
-        enable_extension "plpgsql"
-
-        create_table "favorites", force: :cascade do |t|
-          t.string "country"
-          t.string "recipe_link"
-          t.string "recipe_title"
-          t.datetime "created_at", null: false
-          t.datetime "updated_at", null: false
-        end
-
-        create_table "users", force: :cascade do |t|
-          t.string "name"
-          t.string "email"
-          t.string "api_key"
-          t.string "password_digest"
-          t.datetime "created_at", null: false
-          t.datetime "updated_at", null: false
-        end
-
-        create_table "users_favorites", force: :cascade do |t|
-          t.bigint "user_id"
-          t.bigint "favorite_id"
-          t.index ["favorite_id"], name: "index_users_favorites_on_favorite_id"
-          t.index ["user_id"], name: "index_users_favorites_on_user_id"
-        end
-
-        add_foreign_key "users_favorites", "favorites"
-        add_foreign_key "users_favorites", "users"
-      end
-    ```
-    </td>
-    <td><img src="lib/images/database_v2.png" alt="Database" width="40%"></td>
- </tr>
+<tr>
+<th><b style="font-size:30px">`schema.rb`</b></th>
+<th><b style="font-size:30px">DB Diagram</b></th>
+</tr>
+<tr>
+<td>
+ 
+```ruby
+ActiveRecord::Schema.define(version: 2023_01_15_233149) do
+  enable_extension "plpgsql"
+  
+  create_table "favorites", force: :cascade do |t|
+    t.string "country"
+    t.string "recipe_link"
+    t.string "recipe_title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+  
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "api_key"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+  
+  create_table "users_favorites", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "favorite_id"
+    t.index ["favorite_id"], name: "index_users_favorites_on_favorite_id"
+    t.index ["user_id"], name: "index_users_favorites_on_user_id"
+  end
+  
+  add_foreign_key "users_favorites", "favorites"
+  add_foreign_key "users_favorites", "users"
+end
+```
+      
+</td>
+<td><img src="lib/images/database_v2.png" alt="Database" width="40%"></td>
+</tr>
 </table>
 
 6. Enter your API in the `config/application.yml` file
@@ -173,10 +175,12 @@ To install and run on your personal computer you will need to do the following:
 * `localhost:3000`/api/v1/recipes[^1]
 * `localhost:3000`/api/v1/learning_resources[^2]
 * `localhost:3000`/api/v1/favorites
+
 ### POST
 * `localhost:3000`/api/v1/users
 * `localhost:3000`/api/v1/sessions
 * `localhost:3000`/api/v1/favorites
+
 ### DELETE
 * `localhost:3000`/api/v1/favorites
 
