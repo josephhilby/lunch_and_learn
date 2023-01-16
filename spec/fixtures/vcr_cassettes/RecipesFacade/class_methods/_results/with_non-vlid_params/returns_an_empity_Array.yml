@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 16 Jan 2023 17:35:33 GMT
+      - Mon, 16 Jan 2023 20:16:32 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -37,11 +37,11 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - ecc2bb517997732b0a5e60af15cfed60
+      - 27fb3c1b49b2eff8933fd7cc613cbefd
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 16 Jan 2023 17:35:33 GMT
+  recorded_at: Mon, 16 Jan 2023 20:16:32 GMT
 - request:
     method: get
     uri: https://api.edamam.com/api/recipes/v2?app_id=app_id&app_key=app_key&q=&type=public
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Mon, 16 Jan 2023 17:35:33 GMT
+      - Mon, 16 Jan 2023 20:16:32 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -79,9 +79,9 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 7234140189e09bf6acf57090040be0ad
+      - 1248a85989534ef23f8a1121a4ef9be6
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Mon, 16 Jan 2023 17:35:33 GMT
+  recorded_at: Mon, 16 Jan 2023 20:16:32 GMT
 recorded_with: VCR 6.1.0
