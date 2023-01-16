@@ -110,11 +110,11 @@ To install and run on your personal computer you will need to do the following:
 </tr>
 <tr>
 <td style="width: 60%">
- 
+
 ```ruby
 ActiveRecord::Schema.define(version: 2023_01_15_233149) do
   enable_extension "plpgsql"
-  
+
   create_table "favorites", force: :cascade do |t|
     t.string "country"
     t.string "recipe_link"
@@ -122,7 +122,7 @@ ActiveRecord::Schema.define(version: 2023_01_15_233149) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-  
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -131,19 +131,19 @@ ActiveRecord::Schema.define(version: 2023_01_15_233149) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
-  
+
   create_table "users_favorites", force: :cascade do |t|
     t.bigint "user_id"
     t.bigint "favorite_id"
     t.index ["favorite_id"], name: "index_users_favorites_...
     t.index ["user_id"], name: "index_users_favorites_on_us...
   end
-  
+
   add_foreign_key "users_favorites", "favorites"
   add_foreign_key "users_favorites", "users"
 end
 ```
-      
+
 </td>
 <td style="width: 40%"><img src="lib/images/database_v2.png" alt="Database" style='width: 100%'></td>
 </tr>
@@ -435,7 +435,7 @@ Main Goal(s)
 - [x] POST /users Endpoint
 - [x] POST /sessions
 - [x] POST /favorites Endpoint
-- [ ] GET /favorites Endpoint
+- [x] GET /favorites Endpoint
 
 Stretch Goals
 - [x] Add 400 level status codes and prams check
