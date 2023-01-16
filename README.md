@@ -164,7 +164,7 @@ end
     $ rails s
     ```
 
-8. Now all you need to do is make a request to one of the endpoints. Documentation for all API Endpoints can be found below.
+8. Now all you need to do is make a request to one of the endpoints. Documentation for all API Endpoints can be found below. OR if you prefer to run the simple front-end I created, follow [this_link](https://github.com/josephhilby/lunch_and_learn_front_end)
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
