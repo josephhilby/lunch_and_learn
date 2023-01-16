@@ -1,9 +1,11 @@
 require 'rails_helper'
 
 describe "Create Favorites API" do
+  before do
+    create(:user, api_key: 'key')
+  end
   context ' with valid params' do
     it "can POST a new favorite, return JSON response" do
-      create(:user, api_key: 'key')
       favorite_params = ({
           api_key: 'key',
           country: 'country',
@@ -27,7 +29,6 @@ describe "Create Favorites API" do
 
   context 'with non-valid params[:api_key]' do
     it 'will return an error' do
-      create(:user, api_key: 'key')
       favorite_params = ({
           api_key: 'nkey',
           country: 'country',
@@ -53,7 +54,6 @@ describe "Create Favorites API" do
 
   context 'with missing params' do
     it 'will return an error' do
-      create(:user, api_key: 'key')
       favorite_params = ({
           api_key: 'key',
           recipe_link: 'link',
