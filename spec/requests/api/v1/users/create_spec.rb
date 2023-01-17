@@ -46,7 +46,7 @@ describe "Create Users API" do
   end
 
   context 'with non-valid params' do
-    it 'will return an error' do
+    it 'will return a 400 error' do
       User.create(name: 'name_1', email: 'email@user.com', password: 'password', password_confirmation: 'password')
       user_params = ({
           name: 'name_2',
@@ -72,7 +72,7 @@ describe "Create Users API" do
   end
 
   context 'with missing params' do
-    it 'will return an error' do
+    it 'will return a 400 error' do
       user_params = ({
           name: 'name_2',
           password: 'password',

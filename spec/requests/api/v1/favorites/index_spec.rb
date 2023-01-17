@@ -52,7 +52,7 @@ describe "Index Favorites API" do
   end
 
   context 'with non-valid params[:api_key]' do
-    it 'will return an error' do
+    it 'will return a 401 error' do
 
       get "/api/v1/favorites?api_key=not_the_key"
 
@@ -70,7 +70,7 @@ describe "Index Favorites API" do
   end
 
   context 'with missing params' do
-    it 'will return an error' do
+    it 'will return a 401 error' do
 
       get "/api/v1/favorites"
 

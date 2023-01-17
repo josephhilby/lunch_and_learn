@@ -49,7 +49,7 @@ describe "Create Sessions API" do
   end
 
   context 'with non-valid params' do
-    it 'will return an error' do
+    it 'will return a 401 error' do
       user_params = ({
           email: 'not_the_email',
           password: 'password'
@@ -72,7 +72,7 @@ describe "Create Sessions API" do
   end
 
   context 'with missing params' do
-    it 'will return an error' do
+    it 'will return a 401 error' do
       user_params = ({
           password: 'password'
       })

@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 17 Jan 2023 16:53:16 GMT
+      - Tue, 17 Jan 2023 18:41:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -33,15 +33,15 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 GMT
       X-Served-By:
-      - ip-10-0-1-22.ec2.internal/10.0.1.22
+      - ip-10-0-1-48.ec2.internal/10.0.1.48
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 53fb7fd7421d870cd375d27a7f7112dc
+      - 8338b6104e9e6a72d30df1f47918cb49
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Tue, 17 Jan 2023 16:53:16 GMT
+  recorded_at: Tue, 17 Jan 2023 18:41:28 GMT
 - request:
     method: get
     uri: https://api.edamam.com/api/recipes/v2?app_id=app_id&app_key=app_key&q=&type=public
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 17 Jan 2023 16:53:16 GMT
+      - Tue, 17 Jan 2023 18:41:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -75,13 +75,13 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 GMT
       X-Served-By:
-      - ip-10-0-1-48.ec2.internal/10.0.1.48
+      - ip-10-0-1-22.ec2.internal/10.0.1.22
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - d496ef83fd917590afe18266f86d0d8c
+      - 85dcb462a29f6bff6e9f985fdee52087
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Tue, 17 Jan 2023 16:53:16 GMT
+  recorded_at: Tue, 17 Jan 2023 18:41:28 GMT
 recorded_with: VCR 6.1.0

@@ -78,11 +78,25 @@ end
 VCR.configure do |config|
 	config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
 	config.hook_into :webmock
+	config.default_cassette_options = { re_record_interval: 7.days }
+	config.configure_rspec_metadata!
   config.filter_sensitive_data('app_id') { ENV['edam_app_id'] }
   config.filter_sensitive_data('app_key') { ENV['edam_app_key'] }
   config.filter_sensitive_data('key') { ENV['yt_key'] }
   config.filter_sensitive_data('Authorization') { ENV['pexels_token'] }
-	config.default_cassette_options = { re_record_interval: 7.days }
-	config.configure_rspec_metadata!
+  # config.before_record do |i|
+  #   decoded_body = i.response.body
+  #   decoded_body.gsub!(ENV['edam_app_id'], 'app_id' )
+  #   decoded_body.gsub!(ENV['edam_app_key'], 'app_key')
+  #   decoded_body.gsub!(ENV['yt_key'], 'key')
+  #   decoded_body.gsub!(ENV['pexels_token'], 'Authorization')
+  # end
+  # config.before_playback do |i|
+  #   decoded_body = i.response.body
+  #   decoded_body.gsub!(ENV['edam_app_id'], 'app_id' )
+  #   decoded_body.gsub!(ENV['edam_app_key'], 'app_key')
+  #   decoded_body.gsub!(ENV['yt_key'], 'key')
+  #   decoded_body.gsub!(ENV['pexels_token'], 'Authorization')
+  # end
   # config.debug_logger = File.open('vcr.log', 'w')
 end

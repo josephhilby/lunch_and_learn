@@ -52,7 +52,7 @@ describe "Create Favorites API" do
   end
 
   context 'with non-valid params[:api_key]' do
-    it 'will return an error' do
+    it 'will return a 401 error' do
       favorite_params = ({
           api_key: 'nkey',
           country: 'country',
@@ -77,7 +77,7 @@ describe "Create Favorites API" do
   end
 
   context 'with missing params' do
-    it 'will return an error' do
+    it 'will return a 400 error' do
       favorite_params = ({
           api_key: 'key',
           recipe_link: 'link',
