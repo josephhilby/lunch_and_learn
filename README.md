@@ -441,7 +441,7 @@ Stretch Goals
 - [x] Add 400 level status codes and prams check
 - [x] Implement basic authentication with bcrypt
 - [x] DELETE /favorites Endpoint
-- [ ] Utilize Cashing OR Background Workers
+- [x] Utilize Cashing OR Background Workers
 
 Super Stretch Goals
 - [ ] Generate basic front-end
