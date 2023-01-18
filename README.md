@@ -429,23 +429,23 @@ Delete a selected favorite recipe for the select user.
 <!-- ROADMAP -->
 ## Roadmap
 
-Main Goal(s)
-- [x] GET /recipes Endpoint
-- [x] GET /learning_resources Endpoint
-- [x] POST /users Endpoint
-- [x] POST /sessions
-- [x] POST /favorites Endpoint
-- [x] GET /favorites Endpoint
+Back-end Main Goal(s)
+- [x] GET `/recipes` Endpoint
+- [x] GET `/learning_resources` Endpoint
+- [x] POST `/users` Endpoint
+- [x] POST `/sessions`
+- [x] POST `/favorites` Endpoint
+- [x] GET `/favorites` Endpoint
+- [x] DELETE `/favorites` Endpoint
 
-Stretch Goals
-- [x] Add 400 level status codes and prams check
+Back-end Stretch Goals
+- [x] Add prams check and error handeling
 - [x] Implement basic authentication with bcrypt
-- [x] DELETE /favorites Endpoint
 - [x] Utilize Cashing OR Background Workers
 
-Super Stretch Goals
-- [ ] Generate basic front-end
-- [ ] Add Google OAuth
+Front and Back-end Super Stretch Goals
+- [ ] Update docs with Swagger
+- [ ] Move authentication from Bcrypt to Google OAuth
 - [ ] Deploy to Heroku
 
 See the [open issues](https://github.com/josephhilby/lunch_and_learn/issues) for a full list of proposed features (and known issues).
