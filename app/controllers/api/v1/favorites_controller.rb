@@ -37,7 +37,7 @@ module Api
         else
           user_favorite = user.users_favorites.find_by(favorite_id: select_favorite.id)
           UsersFavorite.delete(user_favorite.id)
-          CleanDbJob.perform_async(select_favorite.id)
+#           CleanDbJob.perform_async(select_favorite.id)
           render json: { success: "Favorite removed successfully" }, status: 200
         end
       end
