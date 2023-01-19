@@ -50,11 +50,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<div align="center">
-
-  [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-</div>
 
 Board with your recipe book? Want to step out of your comfort zone and taste something new? This is for you.
 
