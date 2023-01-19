@@ -175,7 +175,7 @@ end
 <details> 
   <summary> <code>localhost:5001/api/v1/recipes</code> </summary>
 
-### GET /api/v1/recipes?country=thailand
+### GET /api/v1/recipes?country=thai
 
 > Get a list of recipes from a random country (if no params are passed) OR by selected country, through params.
 
@@ -197,7 +197,7 @@ end
 >             "attributes": {
 >                 "title": "Andy Ricker's Naam Cheuam Naam Taan Piip (Palm Sugar Simple Syrup)",
 >                 "url": "https://www.seriouseats.com/recipes/2013/11/andy-rickers-naam-cheuam-naam-taan-piip-palm-sugar-simple-syrup.html",
->                 "country": "thailand",
+>                 "country": "Thailand",
 >                 "image": "https://edamam-product-images.s3.amazonaws.com..."
 >             }
 >         },
@@ -207,7 +207,7 @@ end
 >             "attributes": {
 >                 "title": "Sriracha",
 >                 "url": "http://www.jamieoliver.com/recipes/vegetables-recipes/sriracha/",
->                 "country": "thailand",
+>                 "country": "Thailand",
 >                 "image": "https://edamam-product-images.s3.amazonaws.com/."
 >             }
 >         },
@@ -241,7 +241,7 @@ end
 >        "id": null,
 >        "type": "learning_resource",
 >        "attributes": {
->            "country": "laos",
+>            "country": "Laos",
 >            "video": {
 >                "title": "A Super Quick History of Laos",
 >                "youtube_video_id": "uw8hjVqxMXw"
@@ -294,7 +294,7 @@ end
 >            "attributes": {
 >                "recipe_title": "Recipe: Egyptian Tomato Soup",
 >                "recipe_link": "http://www.thekitchn.com/recipe-egyptian-tomato-soup-weeknight....",
->                "country": "egypt",
+>                "country": "Egypt",
 >                "created_at": "2022-11-02T02:17:54.111Z"
 >            }
 >        },
@@ -304,7 +304,7 @@ end
 >            "attributes": {
 >                "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)",
 >                "recipe_link": "https://www.tastingtable.com/.....",
->                "country": "thailand",
+>                "country": "Thailand",
 >                "created_at": "2022-11-07T03:44:08.917Z"
 >            }
 >        }
@@ -397,7 +397,7 @@ end
 >```
 >{
 >    "api_key": "jgn983hy48thw9begh98h4539h4",
->    "country": "thailand",
+>    "country": "Thailand",
 >    "recipe_link": "https://www.tastingtable.com/.....",
 >    "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
 >}
@@ -426,7 +426,7 @@ end
 >```
 >{
 >    "api_key": "jgn983hy48thw9begh98h4539h4",
->    "country": "thailand",
+>    "country": "Thailand",
 >    "recipe_link": "https://www.tastingtable.com/.....",
 >    "recipe_title": "Crab Fried Rice (Khaao Pad Bpu)"
 >}
