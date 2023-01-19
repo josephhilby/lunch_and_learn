@@ -556,7 +556,7 @@ Thanks again!
 ## Acknowledgments
 
 * Turing School of Software Design: [https://turing.edu/](https://turing.edu/)
-* DBdiagram.io [https://dbdiagram.io/home](https://dbdiagram.io/home)
+* DBdiagram.io: [https://dbdiagram.io/home](https://dbdiagram.io/home)
 * Best-README-Template: [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * API-endpoints: [https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md](https://github.com/bufferapp/README/blob/master/billing/api-endpoints.md)
 
