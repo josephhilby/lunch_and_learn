@@ -454,7 +454,7 @@ Back-end Main Goal(s)
 - [x] GET `/recipes` Endpoint
 - [x] GET `/learning_resources` Endpoint
 - [x] POST `/users` Endpoint
-- [x] POST `/sessions`
+- [x] POST `/sessions` Endpoint
 - [x] POST `/favorites` Endpoint
 - [x] GET `/favorites` Endpoint
 - [x] DELETE `/favorites` Endpoint
