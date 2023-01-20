@@ -1,0 +1,54 @@
+name: Feature Request
+description: Request a new feature
+title: "[Bug]: "
+labels: ["feature", "endpoint"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: request
+    attributes:
+      label: Describe your new feature/endpoint?
+      description: Tell us what data you want, where you think it should come from, how you want it filtered, and how it should be presented?
+      placeholder: Tell us what you see!
+      value: "Your request here!"
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: Is this a new endpoint or a change to an existing endpoint?
+      multiple: true
+      options:
+        - New Endpoint
+        - Change an Old Endpoint
+ - type: textarea
+    id: request
+    attributes:
+      label: What will the request look like
+      description: Describe the request. 
+      placeholder: Tell us what you will request!
+      value: "GET /data?params=thing  JSON.body {maybe: this-too}"
+    validations:
+      required: true
+  - type: textarea
+    id: response
+    attributes:
+      label: Describe your desired JSON response
+      description: Tell us what data you want/how it should be presented?
+      placeholder: Tell us what you want to see!
+      value: "{ data: [ {thing: you_want, to: see} ] }"
+    validations:
+      required: true
