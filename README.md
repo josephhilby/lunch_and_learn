@@ -79,7 +79,7 @@ To get started, follow the link below and register with your Google account. Onc
 
 This application was made with the following:
 
-* ruby '2.7.4'
+* ruby '2.7.4'[^1]
 * rails '5.2.8'
 
 To install and run on your personal computer you will need to do the following:
@@ -159,7 +159,7 @@ end
     $ rails s
     ```
 
-8. Now all you need to do is make a request to one of the endpoints.[^1] Documentation for all API Endpoints can be found below. OR if you prefer to run the simple front-end for this API service, follow [this_link](https://github.com/josephhilby/lunch_and_learn_front_end).
+8. Now all you need to do is make a request to one of the endpoints.[^2] Documentation for all API Endpoints can be found below. OR if you prefer to run the simple front-end for this API service, follow [this_link](https://github.com/josephhilby/lunch_and_learn_front_end).
 
 
 <p align="right">(<a href="#README">back to top</a>)</p>
@@ -167,7 +167,7 @@ end
 <!-- ENDPOINTS -->
 ## API Endpoints
 
-### GET[^2]
+### GET[^3]
 <details> 
   <summary> <code>localhost:5001/api/v1/recipes</code> </summary>
 
@@ -438,8 +438,9 @@ end
 
 </details>
 
-[^1]: Note: The port is crrrently set to 5001. To change the port #, go to `config/puma.rb` and enter your desired port #: `port ENV.fetch("PORT") { <YOUR NUMBER HERE> }`. You can also elect to un-comment the Background Workers Job CleanDbJob (favorites_controller: line 40). Before you do this, you will need to set up a Redis server and Sidekiq adapter. Instructions to this can be found [here](https://backend.turing.edu/module3/archive/lessons/background_workers). Troubleshooting Redis and Mac M1 issues can be found [here](https://medium.com/geekculture/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-fd2e5f5fee88).
-[^2]: Note: The `:country` section in the JSON Response refers to the search criteria. If no video is found on that country, a video on a related country (by culture or geographic area) will instead be returned.
+[^1}: Note: Information on installing Ruby 2.7.4 and Rails 5.2.8 can be found [here](https://backend.turing.edu/module3/misc/ruby_and_rails_versions)
+[^2]: Note: The port is crrrently set to 5001. To change the port #, go to `config/puma.rb` and enter your desired port #: `port ENV.fetch("PORT") { <YOUR NUMBER HERE> }`. You can also elect to un-comment the Background Workers Job CleanDbJob (favorites_controller: line 40). Before you do this, you will need to set up a Redis server and Sidekiq adapter. Instructions to this can be found [here](https://backend.turing.edu/module3/archive/lessons/background_workers). Troubleshooting Redis and Mac M1 issues can be found [here](https://medium.com/geekculture/error-cannot-install-in-homebrew-on-arm-processor-in-intel-default-prefix-fd2e5f5fee88).
+[^3]: Note: The `:country` section in the JSON Response refers to the search criteria. If no video is found on that country, a video on a related country (by culture or geographic area) will instead be returned.
 
 <p align="right">(<a href="#README">back to top</a>)</p>
 
