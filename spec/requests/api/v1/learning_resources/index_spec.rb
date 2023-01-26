@@ -67,11 +67,11 @@ describe 'Index Learning Resources API' do
   end
 
   context 'with no params' do
-    xit 'returns a random country, with RESTCountries API', :vcr do
+    it 'returns a random country, with RESTCountries API', :vcr do
       get "/api/v1/learning_resources"
       # I cant figure out why this stub is not working. Getting the error:
       # CountryFacade does not implement #random_country
-      allow_any_instance_of(CountryFacade).to receive(:random_country).and_return('Malaysia')
+      # allow_any_instance_of(CountryFacade).to receive(:random_country).and_return('Malaysia')
 
       expect(response).to be_successful
 
