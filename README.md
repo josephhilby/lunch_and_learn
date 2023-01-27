@@ -517,14 +517,20 @@ Lunch and Learn is a ***Ruby on Rails*** web application hosted on Heroku.
   <table>
     <tr>
       <td><img src="https://avatars.githubusercontent.com/u/108031077?s=120&v=4"></td>
+      <td><img src="https://avatars.githubusercontent.com/u/102825498?s=120&v=4"></td>
     </tr>
     <tr>
       <td>Joseph Hilby</td>
+      <td>Naomi Youcum</td>
     </tr>
     <tr>
       <td>
         <a href="https://github.com/josephhilby">GitHub</a><br>
         <a href="https://www.linkedin.com/in/josephmhilby/">LinkedIn</a>
+      </td>
+      <td>
+        <a href="https://github.com/naomiyocum">GitHub</a><br>
+        <a href="https://www.linkedin.com/in/naomiyocum/">LinkedIn</a>
       </td>
     </tr>
   </table>
