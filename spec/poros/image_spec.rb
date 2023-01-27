@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Image do
 	before do
-		attrs = { alt: 'alt', url: 'url' }
+		attrs = { alt: 'alt', src: {original: 'org'} }
 		@image = Image.new(attrs)
 	end
 
@@ -13,7 +13,7 @@ RSpec.describe Image do
 
 		it 'has readible attributes' do
 			expect(@image.alt_tag).to eq('alt')
-			expect(@image.url).to eq('url')
+			expect(@image.url).to eq('org')
 		end
 	end
 end
