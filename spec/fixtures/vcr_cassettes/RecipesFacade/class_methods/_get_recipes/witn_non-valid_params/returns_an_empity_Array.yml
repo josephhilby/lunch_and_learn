@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=app_id&app_key=app_key&q=xkcd&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=1d4e5389&app_key=6c5bfb746828d835e9e10b7e4b13b628&q=xkcd&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 17 Jan 2023 18:41:27 GMT
+      - Fri, 27 Jan 2023 16:07:28 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -37,14 +37,14 @@ http_interactions:
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 68c33e49c6bd1c722d65a53a2a5b00cd
+      - 16e31d405b790975f6ba0a7c728cbf55
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Tue, 17 Jan 2023 18:41:27 GMT
+  recorded_at: Fri, 27 Jan 2023 16:07:28 GMT
 - request:
     method: get
-    uri: https://api.edamam.com/api/recipes/v2?app_id=app_id&app_key=app_key&q=&type=public
+    uri: https://api.edamam.com/api/recipes/v2?app_id=1d4e5389&app_key=6c5bfb746828d835e9e10b7e4b13b628&q=&type=public
     body:
       encoding: US-ASCII
       string: ''
@@ -63,7 +63,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 17 Jan 2023 18:41:27 GMT
+      - Fri, 27 Jan 2023 16:07:29 GMT
       Content-Type:
       - application/json
       Content-Length:
@@ -75,13 +75,13 @@ http_interactions:
       Expires:
       - Thu, 01 Jan 1970 00:00:00 GMT
       X-Served-By:
-      - ip-10-0-1-48.ec2.internal/10.0.1.48
+      - ip-10-0-1-22.ec2.internal/10.0.1.22
       Strict-Transport-Security:
       - max-age=15552001
       X-Request-Id:
-      - 23582f394832b6e3048ac0aa2dc04aa2
+      - 4f9ac2b439275320c78e30223e242f3f
     body:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
-  recorded_at: Tue, 17 Jan 2023 18:41:27 GMT
+  recorded_at: Fri, 27 Jan 2023 16:07:29 GMT
 recorded_with: VCR 6.1.0

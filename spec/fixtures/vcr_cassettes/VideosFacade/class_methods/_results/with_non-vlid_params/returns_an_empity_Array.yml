@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=key&part=snippet&q=xkcd&type=video
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyBhgvNZ-ic2z9q1-6v3bfblaigSeh_iayg&part=snippet&q=xkcd&type=video
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 17 Jan 2023 18:41:31 GMT
+      - Fri, 27 Jan 2023 16:07:33 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -37,8 +37,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443";
-        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
@@ -54,5 +53,5 @@ http_interactions:
           },
           "items": []
         }
-  recorded_at: Tue, 17 Jan 2023 18:41:31 GMT
+  recorded_at: Fri, 27 Jan 2023 16:07:32 GMT
 recorded_with: VCR 6.1.0
