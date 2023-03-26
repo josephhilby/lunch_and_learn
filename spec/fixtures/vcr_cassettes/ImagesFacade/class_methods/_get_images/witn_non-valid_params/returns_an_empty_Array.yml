@@ -1,0 +1,135 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?query=xkcd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 26 Mar 2023 14:14:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7ae000a4cf84b10c-ATL
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=86400
+      Etag:
+      - W/"5188ac46f9d89b65c048e79e02f554ce"
+      Expires:
+      - Mon, 27 Mar 2023 14:14:53 GMT
+      Cf-Cache-Status:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19996'
+      X-Ratelimit-Reset:
+      - '1682104749'
+      X-Request-Id:
+      - d6fdd8ba-33f3-423d-aa0a-7c460752a4ae
+      X-Runtime:
+      - '0.069663'
+      X-Server:
+      - bulldog
+      Set-Cookie:
+      - __cf_bm=Et91Czmu.UkNDwh8ZJJryFLQyZcvZyCUQxKFzIxFQ_I-1679840093-0-ARPd7BRMObF8eU4MMIAFy0Tp56Tkdig7hIQ7KaL86fFwHhMgF8SVhfGyVo+YFkz7d3lkigaKOgF4ki2zKPtizR8=;
+        path=/; expires=Sun, 26-Mar-23 14:44:53 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":15,"photos":[],"total_results":0}'
+  recorded_at: Sun, 26 Mar 2023 14:14:53 GMT
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?query=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Authorization
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Sun, 26 Mar 2023 14:14:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cf-Ray:
+      - 7ae000a66e71456c-ATL
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max-age=86400
+      Cf-Cache-Status:
+      - MISS
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19995'
+      X-Ratelimit-Reset:
+      - '1682104749'
+      X-Request-Id:
+      - a6679980-4c0d-46e3-8a6e-e91fd414c0b1
+      X-Runtime:
+      - '0.004152'
+      X-Server:
+      - chameleon
+      Set-Cookie:
+      - __cf_bm=YGW1DZ2_VWmUkPnw4ctDEZ4dcDhU3ZRKhvHaJDr4zr4-1679840093-0-AXjFdznmKNKZDEHEnOy1Es1yivzWcPAEOEibcMfQecl5ib1kH6Lv7ylRQqIoU7AL9D5ud8kezZzurQ8z75psCfY=;
+        path=/; expires=Sun, 26-Mar-23 14:44:53 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"status":400,"code":"No query param given"}'
+  recorded_at: Sun, 26 Mar 2023 14:14:53 GMT
+recorded_with: VCR 6.1.0

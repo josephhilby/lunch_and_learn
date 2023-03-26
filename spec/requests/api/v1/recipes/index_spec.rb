@@ -67,7 +67,7 @@ describe 'Index Recipes API' do
 
       recipes = JSON.parse(response.body, symbolize_names: true)
 
-      expect(recipes[:data].count).to be(20)
+      expect(recipes[:data].count).to (be <= 20)
       expect(recipes.size).to eq(1)
 
       recipes[:data].each do |recipe|

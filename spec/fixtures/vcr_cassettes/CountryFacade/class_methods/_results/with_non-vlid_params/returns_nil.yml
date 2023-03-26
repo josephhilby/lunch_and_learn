@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/xkcd
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 26 Mar 2023 14:14:51 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '36'
+    body:
+      encoding: UTF-8
+      string: '{"status":404,"message":"Not Found"}'
+  recorded_at: Sun, 26 Mar 2023 14:14:51 GMT
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Sun, 26 Mar 2023 14:14:51 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '87'
+    body:
+      encoding: UTF-8
+      string: '{"message":"Page Not Found","_links":{"self":{"href":"/v3.1/name/","templated":false}}}'
+  recorded_at: Sun, 26 Mar 2023 14:14:51 GMT
+recorded_with: VCR 6.1.0
